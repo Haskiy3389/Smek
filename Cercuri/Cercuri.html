@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cercuri</title>
+    <link rel="icon" href="favicon.ico">    
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #151515;
+    }
+
+    .pentrucerc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;  
+        background-color: #151515;   
+     }
+
+     .cerc1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 3px solid #44fefe;
+        border-top: 3px solid #151515;
+        animation: anima 3s linear infinite;
+     }
+
+     .cerc2{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        border: 3px solid #44fefe;
+        border-top: 3px solid #151515;
+        animation: anima 2s linear infinite;
+     }
+
+
+     @keyframes anima{
+        0%{
+            transform: rotate(0deg);
+        }
+
+        100%{
+            transform: rotate(360deg);
+        }
+     }
+
+     .titlu{
+        background-color: #151515;
+        color:white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top:200px;
+        animation: titlu 3s ease-in infinite;
+     }
+    
+    @keyframes titlu{
+        0%{
+            opacity: 1;
+            background-color: #151515;
+            color: #151515;
+        }
+        50%{
+            opacity: 1;
+            color: aqua;
+            background-color: #151515;
+        }
+        100%{opacity: 1;
+            background-color: #151515;
+            color: #151515;
+        }
+    }
+
+    .pentrucerc2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #151515; 
+        position: absolute;
+        top: 46
+        %;
+        left: 48%;
+    }
+
+    .cercmic{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: 3px solid #44fefe;
+        border-top: 3px solid #151515;
+        animation: anima2 3s linear infinite;
+     }
+
+     @keyframes anima2{
+        0%{
+            transform: rotate(0deg);
+        }
+
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+</style>
+
+<body>
+    <div class="titlu">
+        <h1>Cercul smekeriei</h1>
+    </div>
+    <div class="pentrucerc">
+        <div class="cerc1">
+            <div class="cerc2">
+            </div>
+        </div>
+    </div>
+
+    <div class="pentrucerc2">
+        <div class="cercmic"></div>
+
+    </div>
+
+</body>
+</html>
